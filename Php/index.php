@@ -66,55 +66,94 @@
 			</form>
 		</div>
 	</nav>
-	<div>
-		
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" style="width: 900px; height: 550px" src="../Img/slide1.jpg"  alt="First slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" style="width: 900px; height: 550px" src="../Img/slide2.jpg"  alt="Second slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" style="width: 900px; height: 550px" src="../Img/slide3.jpg"  alt="Third slide">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" style="width: 900px; height: 550px" src="../Img/slide1.jpg"  alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" style="width: 900px; height: 550px" src="../Img/slide2.jpg"  alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" style="width: 900px; height: 550px" src="../Img/slide3.jpg"  alt="Third slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
 		</div>
 	</div>
 	<br>
+	<br>
 
-	<div style="display: flex;">
-		<?php include 'database.php';?>
-		<div class="trai">
-		<h1 >	<?php echo $result[0][1];  ?></h1>
-			
-		</div>
-		<div class="giua">
-		<img style="width: 250px; height: 250px;" src="../Img/<?php  echo $result[0][2]; ?>" alt="">
-			
-		</div>
-		<div class="phai">
-		<h1><?php echo $result[0][3];  ?></h1>
-		<p><?php echo $result[0][4];  ?></p>
-		<p><?php echo $result[0][5];  ?></p>
-			
+	
+	<?php include 'database.php';?>
+	<div style="justify-content: center;display: flex;">
+		<div class = "container">
+
+			<div class = "row">
+				<div class = "col-sm-4">
+					<h1 style="margin-top: 100px;" >	<?php echo $result[0][1];  ?></h1>
+				</div>
+
+				<div class = "col-sm-4">
+					<img style="width: 250px; height: 250px;" src="../Img/<?php  echo $result[0][2]; ?>" alt="">
+				</div>
+
+				<div class = "col-sm-4">
+					<center><h1><?php echo $result[0][3];  ?></h1></center>
+					<p><center><?php echo $result[0][4];  ?></center></p>
+					<center><p style="color: red">"<?php echo $result[0][5];  ?>"</p></center>
+				</div>
+
+			</div>
 		</div>
 		
+
 	</div>
-	
+	<hr>
+	<br>
+
+	<div style="text-align: center;">
+		<h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
+		<p>Hãy đến với chúng tôi và góp ý để chúng tôi trở nên hoàn hảo</p>
+	</div>
+	<?php include 'database.php';?>
+	<div class="container">
+		<div class="row">
+			<?php for ($i=0; $i < count($result1)  ; $i++) { 
+				?>
+
+				<div class = "col-sm-3">
+
+					<center><img class="abc" style="width: 200px; height: 200px" src="<?php  echo $result1[$i][1]; ?>"></center>
+					<center><h5>	<?php echo $result1[$i][2];  ?></h5></center>
+					<center><p>	<?php echo $result1[$i][3];  ?></p></center>
+				</div>
+				
+
+			<?php } ?>
+		</div>
+	</div>
+	<div>
+		
+	</div>
+
 </body>
 </html>
