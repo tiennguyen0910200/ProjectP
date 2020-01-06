@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Dan Nhac Trinh</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
 </head>
 <body>
 	
@@ -114,9 +115,11 @@
 
 				<div class = "col-sm-4">
 					<img style="width: 250px; height: 250px;" src="../Img/<?php  echo $result[0][2]; ?>" alt="">
-				</div>
 
+				</div>
+				
 				<div class = "col-sm-4">
+
 					<center><h1><?php echo $result[0][3];  ?></h1></center>
 					<p><center><?php echo $result[0][4];  ?></center></p>
 					<center><p style="color: red">"<?php echo $result[0][5];  ?>"</p></center>
@@ -143,7 +146,8 @@
 				<div class = "col-sm-3">
 
 					<center><img class="abc" style="width: 200px; height: 200px" src="<?php  echo $result1[$i][1]; ?>"></center>
-					<center><h5>	<?php echo $result1[$i][2];  ?></h5></center>
+					<br>
+					<center><h5 style="color:red">	<?php echo $result1[$i][2];  ?></h5></center>
 					<center><p>	<?php echo $result1[$i][3];  ?></p></center>
 				</div>
 				
@@ -151,9 +155,63 @@
 			<?php } ?>
 		</div>
 	</div>
-	<div>
+	<hr>
+	
+	<div style="background-color: #f6f9f9">
+		<?php include 'database.php';?>
+		<div class="container">
+			<div class="row">
+				<div class = "col-sm-6">
+					<img style="width: 470px; height: 350px" src="<?php  echo $result2[0][1]; ?>">
+				</div>
+				<div class = "col-sm-6">
+					<h1><?php echo $result2[0][2];?></h1>
+					<h6><?php echo $result2[0][3];?></h6>
+					<br>
+					<p><i class="far fa-check-circle">&emsp;<?php echo $result2[0][4];?></i></p>
+					<p><i class="far fa-check-circle">&emsp;<?php echo $result2[0][5];?></i></p>
+					<p><i class="far fa-check-circle">&emsp;<?php echo $result2[0][6];?></i></p>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<hr>
+	<br>
+	<div style="text-align: center;">
+		<h1>NHÂN VIÊN HIỆN TẠI</h1>
+		<p>Cùng xem họ là những anh chàng đẹp trai hay những cô gái dễ thương nào!!!</p>
+	</div>
+	<?php include 'database.php';?>
+
+	<div class="container">
+		<div class="row">
+			<div class = "col-sm-4">
+				<img style="width: 270px; height: 230px" src="<?php  echo $result3[2][2]; ?>">
+				<img style="width: 270px; height: 230px" src="<?php  echo $result3[1][2]; ?>">
+			</div>
+			<div class = "col-sm-4">
+				<img style="width: 400px; height: 460px" src="<?php  echo $result3[0][2]; ?>">
+			</div>
+			<div class = "col-sm-4">
+				<img style="width: 270px; height: 230px" src="<?php  echo $result3[3][2]; ?>">
+				<img style="width: 270px; height: 230px" src="<?php  echo $result3[4][2]; ?>">
+			</div>
+		</div>
+		<br>
+		<center><a href="" class="btn btn-outline-success my-2 my-sm-0">Xem về họ</a></center>
 		
 	</div>
+	<hr>
+	<div style="text-align: center;">
+		<h1>LIÊN HỆ</h1>
+		<p>Hãy liện hệ với chúng tôi khi bạn cần</p>
+	</div>
+	<div style="justify-content: center;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122691.61999027408!2d108.17146182096877!3d16.059618435928083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421f6ae29c8b3f%3A0x9e0d602a6827ba6d!2zQsOqIFRodWkgVHLhu4tuaA!5e0!3m2!1svi!2s!4v1577692014497!5m2!1svi!2s" width="1100px;" height="400px;" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+
 
 </body>
 </html>
