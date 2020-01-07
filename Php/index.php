@@ -253,7 +253,7 @@
 			<div class="col-sm-4">
 				<center><h1>Dàn nhạc Trịnh</h1>
 				<br>
-				<i class="fas fa-clock"></i>Thứ 2-Chủ nhật:8:00-22:00
+				<i class="fas fa-clock"></i>Thứ 2-Chủ nhật:8:00-22:00<br>
 				<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
 			</center></div>
 			<div class="col-sm-4">

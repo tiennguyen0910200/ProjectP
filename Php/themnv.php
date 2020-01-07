@@ -80,6 +80,7 @@
 			<input type="text" name="dc" class="form-control"  placeholder="địa chỉ">
 			<label for="">Số điện thoại</label>
 			<input type="text" name="sdt" class="form-control" placeholder="số điện thoại">
+			<label for="">Chọn</label>
 			<select name="select" id="input" class="form-control" required="required">
 				<option value="">Chỉnh âm</option>
 				<option value="">Nhạc công</option>
@@ -92,7 +93,7 @@
 	<?php include 'database.php';?>
 	<div>
 		<?php if (isset($_POST['them'])) {
-		$sql_insert = 'INSERT INTO employee(name,image,address,phone,assignment) VALUES ('.$_POST['ten'].','.$_POST['anh'].','.$_POST['diachi'].','.$_POST['sdt'].','.$_POST['select'].')';
+		$sql_insert = 'INSERT INTO employee(name,image,address,phone,assignment) VALUES ('.$_POST['ten'].','.$_POST['anh'].','.$_POST['dc'].','.$_POST['sdt'].','.$_POST['select'].')';
 		$db->query($sql_insert);
 	} ?>
 	<br>

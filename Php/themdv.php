@@ -104,7 +104,6 @@
 		
 		<div style="display: flex;">
 			<button type="submit" name="themdv" class="btn btn-primary">Them</button>
-			<a href="../Php/admin.php" title=""> <i class="fas fa-undo-alt">&emsp;</i>Quay lại</a>
 		</div>
 	</form>
 	<br>
