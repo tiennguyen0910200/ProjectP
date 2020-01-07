@@ -206,7 +206,7 @@
 			</div>
 		</div>
 		<br>
-		<center><a href="" class="btn btn-outline-info my-2 my-sm-0">Xem về họ</a></center>
+		<center><a href="../Php/xemveho.php" class="btn btn-outline-info my-2 my-sm-0">Xem về họ</a></center>
 		
 	</div>
 	<hr>
@@ -267,7 +267,7 @@
 	</div>
 	<br>
 	<br>
-	<center><div style="background-color: #252525;color: white;"> &copy; 2019 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
+	<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
 
 
 </body>

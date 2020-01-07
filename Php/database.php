@@ -30,8 +30,9 @@ $result4 = $db->query($sql4)->fetch_all();
 
 if (isset($_POST['themdv'])) {{
 	$db->query("INSERT INTO service1(names,images,emp,price) values('".$_POST['select']."','".$_POST['anhdv']."','".$_POST['tennv']."','".$_POST['giadv']."')");
+	header('refresh:0');
 }
-header('refresh:0');}
+}
 
 if (isset($_POST['xoa'])) {
 	$db->query("delete from service1 where id = ".$_POST['xoa']);
@@ -41,4 +42,5 @@ if (isset($_POST['xoa'])) {
 }
 $sql5 = "SELECT * from emp";
 $result5 = $db->query($sql5)->fetch_all();
+
 ?>

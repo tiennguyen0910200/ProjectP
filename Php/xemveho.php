@@ -40,7 +40,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="../Php/index.php">Trang Chủ <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Tư Vấn</a>
@@ -68,5 +68,26 @@
 		</div>
 	</nav>
 	<br>
+	<center><h1 style="font-size: 56px;color:#a83250">Hello</h1></center>
+	
+	<br>
+	<?php include 'database.php';?>
+	<div class="container">
+		<div class="row">
+			<?php for ($i=0; $i < count($result3)  ; $i++) { 
+				?>
+			<div class="col-sm-3">
+				<div class="border" >
+				<h5><?php echo $result3[$i][1];  ?></h5>
+				<img style="width: 200px; height: 200px" src="<?php  echo $result3[$i][2]; ?>">
+				<p><?php echo $result3[$i][3];  ?></p>
+				<p><?php echo $result3[$i][4];  ?></p>
+				<p><?php echo $result3[$i][5];  ?></p>
+				</div>
+			</div>
+		<?php } ?>
+		</div>
+		
+	</div>
 </body>
 </html>
