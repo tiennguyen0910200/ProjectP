@@ -13,7 +13,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
 </head>
 <body>
 	
@@ -23,9 +23,9 @@
 			<!-- <li><img src="../Img/phone.png"></li> -->
 			<i class="fas fa-map-marker-alt">&emsp;Xuân Phú - Hòa Sơn - Hòa Vang - TP. Đà Nẵng</i>&emsp;
 			<i class="fab fa-facebook">&emsp;Dàn Nhạc Trịnh</i>&emsp;
-			<i style="margin-left: 260px;" class="fas fa-sign-in-alt">Đăng kí</i>&emsp;
-			<i class="fas fa-sign-in-alt">Đăng nhập</i>&emsp;
-		</ul>
+			<i style="margin-left: 260px;" class="fas fa-sign-in-alt"> Đăng kí</i>&emsp;
+			<i class="fas fa-sign-in-alt"> Đăng nhập</i>&emsp;
+		</ul> 
 	</div>
 	<br>
 	<br>
@@ -132,7 +132,7 @@
 	</div>
 	<hr>
 	<br>
-
+  <!-- Dich vụ -->
 	<div style="text-align: center;">
 		<h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
 		<p>Hãy đến với chúng tôi và góp ý để chúng tôi trở nên hoàn hảo</p>
@@ -154,8 +154,11 @@
 
 			<?php } ?>
 		</div>
+		<br>
+		<center><a href="../Php/xemnhieuhon.php" class="btn btn-outline-danger my-2 my-sm-0">Xem nhiều hơn</a></center>
 	</div>
 	<hr>
+
 	
 	<div style="background-color: #f6f9f9">
 		<?php include 'database.php';?>
@@ -176,9 +179,12 @@
 			</div>
 
 		</div>
+
+		
 	</div>
 	<hr>
 	<br>
+	<!-- NHân viên hiện tại  -->
 	<div style="text-align: center;">
 		<h1>NHÂN VIÊN HIỆN TẠI</h1>
 		<p>Cùng xem họ là những anh chàng đẹp trai hay những cô gái dễ thương nào!!!</p>
@@ -188,29 +194,80 @@
 	<div class="container">
 		<div class="row">
 			<div class = "col-sm-4">
-				<img style="width: 270px; height: 230px" src="<?php  echo $result3[2][2]; ?>">
-				<img style="width: 270px; height: 230px" src="<?php  echo $result3[1][2]; ?>">
+				<img style="width: 270px; height: 270px" src="<?php  echo $result5[1][1]; ?>">
+				<img style="width: 270px; height: 270px" src="<?php  echo $result5[2][1]; ?>">
 			</div>
 			<div class = "col-sm-4">
-				<img style="width: 400px; height: 460px" src="<?php  echo $result3[0][2]; ?>">
+				<img style="width: 560px; height: 540px;margin-left: -110px;" src="<?php  echo $result5[0][1]; ?>">
 			</div>
 			<div class = "col-sm-4">
-				<img style="width: 270px; height: 230px" src="<?php  echo $result3[3][2]; ?>">
-				<img style="width: 270px; height: 230px" src="<?php  echo $result3[4][2]; ?>">
+				<img style="width: 270px; height: 270px" src="<?php  echo $result5[3][1]; ?>">
+				<img style="width: 270px; height: 270px" src="<?php  echo $result5[4][1]; ?>">
 			</div>
 		</div>
 		<br>
-		<center><a href="" class="btn btn-outline-success my-2 my-sm-0">Xem về họ</a></center>
+		<center><a href="" class="btn btn-outline-info my-2 my-sm-0">Xem về họ</a></center>
 		
 	</div>
 	<hr>
+
+	<div style="background-color: #f6f9f9;" >
+		<div class="container">
+			<div class="row">
+
+				<div style="margin-top: 40px;" class="col-sm-6">
+					<h6>Ông Trịnh(GĐ) nói:</h6>
+					<br>
+					<p><i>"Tôi có điềm đam mê mãnh liệt về âm nhạc từ nhỏ,nhưng ngày xưa thì không đủ điệu kiện để học nên tôi đã từ bỏ.Cho đến một ngày tôi có thể tự xây dựng nên được một dàn nhạc riêng cho chính bản thân mình thì tôi rất trân trọng nó,đặt hết tâm huyết vào nó.Tôi đã cố gắng từng ngày để dàn nhạc của tôi được biết đến nhiều như bây giờ.Các bạn biết không, tôi đã ngoài 50u nhưng tôi vẫn xem youtube để học những giai điệu mới mỗi ngày đó. Nên các bạn cứ tin tưởng khi chọ dàn nhạc chúng tôi nhé!"</i></p>
+
+				</div>
+				<div class="col-sm-6">
+					<img style="margin-left: 110px; width: 360px; height: 350px;  " src="../Img/cau6ne.jpg" alt="">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<br>
+	<!-- Liên hệ -->
 	<div style="text-align: center;">
 		<h1>LIÊN HỆ</h1>
 		<p>Hãy liện hệ với chúng tôi khi bạn cần</p>
 	</div>
-	<div style="justify-content: center;">
+	<div style="text-align: center;">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122691.61999027408!2d108.17146182096877!3d16.059618435928083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421f6ae29c8b3f%3A0x9e0d602a6827ba6d!2zQsOqIFRodWkgVHLhu4tuaA!5e0!3m2!1svi!2s!4v1577692014497!5m2!1svi!2s" width="1100px;" height="400px;" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	</div>
+	<hr>
+	<br>
+	<!-- Kết -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<center><h1>Dàn nhạc Trịnh</h1>
+				<br>
+				<p>Chúng tôi rất vui khi được phục vụ các bạn, luôn mong các bạn có được sự trải nghiệm tốt nhất.Hãy liên lạc với chúng tôi nhé các bạn!!!</p>
+				<i>Chúng các bạn ngày vui vẻ!</i>
+				
+			</center></div>
+			<div class="col-sm-4">
+				<center><h1>Dàn nhạc Trịnh</h1>
+				<br>
+				<i class="fas fa-clock"></i>Thứ 2-Chủ nhật:8:00-22:00
+				<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
+			</center></div>
+			<div class="col-sm-4">
+				<center><h1>Dàn nhạc Trịnh</h1>
+				<br>
+				<i class="fab fa-facebook"></i>Dàn nhạc Trịnh<br>
+				<i class="fas fa-envelope"></i>trinh.nguyen1968@gmail.com<br>
+				<i class="fas fa-phone"></i>(+84)983 942 707
+			</center></div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<center><div style="background-color: #252525;color: white;"> &copy; 2019 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
 
 
 </body>

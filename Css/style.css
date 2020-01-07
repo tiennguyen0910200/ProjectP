@@ -21,9 +21,22 @@ header{
 	height: 50px;
 }
 .abc:hover {
-    background-color: #FFCCCC;
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+  transform: scale(0.1);
+        /* Safari & Google Chrome */
+        -webkit-transform: scale(1.2);
+        /* Mozilla Firefox */
+        -moz-transform: scale(1.2); 
+        /* Opera */
+        -o-transform: scale(1.2);
+        /* IE 9 */
+        -ms-transform: scale(1.2);
+}
+.border{
+    border: 1px black solid;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.border:hover {
+	border: 1px red solid;
 }
