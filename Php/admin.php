@@ -40,7 +40,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="../Php/index.php">Trang Chủ <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../Php/themnv.php">Quản lí nhân viên</a>
@@ -60,6 +60,75 @@
 		</div>
 	</nav>
 	<br>
-    <a href="../Php/index.php" title=""> <i class="fas fa-undo-alt">&emsp;</i>Quay lại</a>
-</body>
-</html>
+
+	<center><h1 style="color:#a83250;">NHÂN VIÊN</h1></center>
+	<table class="table table-sm table-inverse table-hover">
+		
+		<tr>
+			<th>Id</th>
+			<th>Tên</th>
+			<th>Ảnh</th>
+			<th>Địa chỉ</th>
+			<th>Số điện thoại</th>
+			<th>Chuyên môn</th>
+		
+		</tr>
+		
+		<tbody>
+			<?php include 'database.php';?>
+			<form method="POST">
+				<?php
+				for ($i=0; $i < count($result3)  ; $i++) { 
+					?>
+					<tr>
+						<td><?php  echo $result3[$i][0]; ?></td>
+						<td><?php  echo $result3[$i][1]; ?></td>
+						<td style="width: 300px"><img style="width: 130px; height: 130px" src="../Img/<?php  echo $result3[$i][2]; ?>"></td>
+
+						<td><?php  echo $result3[$i][4]; ?></td>
+						<td><?php  echo $result3[$i][5]; ?></td>
+						<td><?php  echo $result3[$i][3]; ?></td>
+						
+						</tr>
+					<?php } ?>
+
+
+				</form>
+			</tbody>
+		</table>
+		<hr>
+		<br>
+		<center><h1 style="color:#a83250;">DỊCH VỤ</h1></center>
+		<table class="table table-hover">
+		
+		<tr>
+			<th>Id</th>
+			<th>Tên dịch vụ</th>
+			<th>Ảnh</th>
+			<th>Tên nhân viên</th>
+			<th>Giá</th>
+			
+		</tr>
+		
+		<tbody>
+			<?php include 'database.php';?>
+			<form method="POST">
+				<?php
+				for ($i=0; $i < count($result4)  ; $i++) { 
+					?>
+					<tr>
+						<td><?php  echo $result4[$i][0]; ?></td>
+						<td><?php  echo $result4[$i][1]; ?></td>
+						<td style="width: 300px"><img style="width: 100px; height: 100px" src="../Img/<?php  echo $result4[$i][2]; ?>"></td>
+
+						<td><?php  echo $result4[$i][3]; ?></td>
+						<td><?php  echo $result4[$i][4]; ?></td>
+						</tr>
+					<?php } ?>
+
+
+				</form>
+			</tbody>
+		</table>
+	</body>
+	</html>

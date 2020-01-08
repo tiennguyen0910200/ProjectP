@@ -40,7 +40,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="../Php/admin.php">Trang Chủ <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Tư Vấn</a>
@@ -133,8 +133,7 @@
 						<td><?php  echo $result4[$i][0]; ?></td>
 						<td><?php  echo $result4[$i][1]; ?></td>
 						<td style="width: 300px"><img style="width: 130px; height: 130px" src="../Img/<?php  echo $result4[$i][2]; ?>"></td>
-
-						<td><?php  echo $result4[$i][3]; ?></td>
+                        <td><?php  echo $result4[$i][3]; ?></td>
 						<td><?php  echo $result4[$i][4]; ?></td>
 						<td><button name="sua" value=<?php echo $result4[$i][0] ?>>Sửa</button>
 							<button name="xoa" value=<?php echo $result4[$i][0] ?>> Xóa</button></td>

@@ -10,6 +10,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 
 
@@ -23,8 +26,93 @@
 			<!-- <li><img src="../Img/phone.png"></li> -->
 			<i class="fas fa-map-marker-alt">&emsp;Xuân Phú - Hòa Sơn - Hòa Vang - TP. Đà Nẵng</i>&emsp;
 			<i class="fab fa-facebook">&emsp;Dàn Nhạc Trịnh</i>&emsp;
-			<i style="margin-left: 260px;" class="fas fa-sign-in-alt"> Đăng kí</i>&emsp;
-			<i class="fas fa-sign-in-alt"> Đăng nhập</i>&emsp;
+			<i style="margin-left: 260px;" class="fas fa-sign-in-alt" data-toggle="modal" data-target="#myModal" > Đăng kí</i>&emsp;
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<!-- <div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+					-->
+					<!-- Modal body -->
+						<!-- <div class="modal-body">
+							Modal body..
+						</div> -->
+
+						<!-- Modal footer -->
+						<!-- <div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div> -->
+						<div style="color:black">
+							<center><h1>Dang ki</h1></center>
+							<hr>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">Hovaten</label>
+									
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputName" placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">Gmail</label>
+									
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputGmail" placeholder="Gmail">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword" class="col-sm-2 control-label">MatKhau</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+								
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Gui</button>
+								</div>
+							</form>
+						</div>
+
+						
+
+					</div>
+				</div>
+			</div>
+			<i class="fas fa-sign-in-alt" data-toggle="modal" data-target="#myModal1"> Đăng nhập</i>&emsp;
+			<div class="modal" id="myModal1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div style="color:black">
+							<center><h1>Dang ki</h1></center>
+							<hr>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">Hovaten</label>
+
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputName" placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword" class="col-sm-2 control-label">MatKhau</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+								<a href="" >Quen mat khau</a>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Gui</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</ul> 
 	</div>
 	<br>
@@ -40,7 +128,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="../Php/admin.php">Trang Chủ <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Tư Vấn</a>
@@ -132,7 +220,7 @@
 	</div>
 	<hr>
 	<br>
-  <!-- Dich vụ -->
+	<!-- Dich vụ -->
 	<div style="text-align: center;">
 		<h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
 		<p>Hãy đến với chúng tôi và góp ý để chúng tôi trở nên hoàn hảo</p>
@@ -165,15 +253,15 @@
 		<div class="container">
 			<div class="row">
 				<div class = "col-sm-6">
-					<img style="width: 470px; height: 350px" src="<?php  echo $result2[0][1]; ?>">
+					<img style="width: 470px; height: 350px" src="<?php  echo $resultw[0][1]; ?>">
 				</div>
 				<div class = "col-sm-6">
-					<h1><?php echo $result2[0][2];?></h1>
-					<h6><?php echo $result2[0][3];?></h6>
+					<h1><?php echo $resultw[0][2];?></h1>
+					<h6><?php echo $resultw[0][3];?></h6>
 					<br>
-					<p><i class="far fa-check-circle">&emsp;<?php echo $result2[0][4];?></i></p>
-					<p><i class="far fa-check-circle">&emsp;<?php echo $result2[0][5];?></i></p>
-					<p><i class="far fa-check-circle">&emsp;<?php echo $result2[0][6];?></i></p>
+					<p><i class="far fa-check-circle">&emsp;<?php echo $resultw[0][4];?></i></p>
+					<p><i class="far fa-check-circle">&emsp;<?php echo $resultw[0][5];?></i></p>
+					<p><i class="far fa-check-circle">&emsp;<?php echo $resultw[0][6];?></i></p>
 
 				</div>
 			</div>
@@ -230,6 +318,8 @@
 	</div>
 	<hr>
 	<br>
+	<!-- video -->
+	
 	<!-- Liên hệ -->
 	<div style="text-align: center;">
 		<h1>LIÊN HỆ</h1>
@@ -245,30 +335,30 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<center><h1>Dàn nhạc Trịnh</h1>
+					<br>
+					<p>Chúng tôi rất vui khi được phục vụ các bạn, luôn mong các bạn có được sự trải nghiệm tốt nhất.Hãy liên lạc với chúng tôi nhé các bạn!!!</p>
+					<i>Chúng các bạn ngày vui vẻ!</i>
+
+				</center></div>
+				<div class="col-sm-4">
+					<center><h1>Dàn nhạc Trịnh</h1>
+						<br>
+						<i class="fas fa-clock"></i>Thứ 2-Chủ nhật:8:00-22:00<br>
+						<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
+					</center></div>
+					<div class="col-sm-4">
+						<center><h1>Dàn nhạc Trịnh</h1>
+							<br>
+							<i class="fab fa-facebook"></i>Dàn nhạc Trịnh<br>
+							<i class="fas fa-envelope"></i>trinh.nguyen1968@gmail.com<br>
+							<i class="fas fa-phone"></i>(+84)983 942 707
+						</center></div>
+					</div>
+				</div>
 				<br>
-				<p>Chúng tôi rất vui khi được phục vụ các bạn, luôn mong các bạn có được sự trải nghiệm tốt nhất.Hãy liên lạc với chúng tôi nhé các bạn!!!</p>
-				<i>Chúng các bạn ngày vui vẻ!</i>
-				
-			</center></div>
-			<div class="col-sm-4">
-				<center><h1>Dàn nhạc Trịnh</h1>
 				<br>
-				<i class="fas fa-clock"></i>Thứ 2-Chủ nhật:8:00-22:00<br>
-				<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
-			</center></div>
-			<div class="col-sm-4">
-				<center><h1>Dàn nhạc Trịnh</h1>
-				<br>
-				<i class="fab fa-facebook"></i>Dàn nhạc Trịnh<br>
-				<i class="fas fa-envelope"></i>trinh.nguyen1968@gmail.com<br>
-				<i class="fas fa-phone"></i>(+84)983 942 707
-			</center></div>
-		</div>
-	</div>
-	<br>
-	<br>
-	<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
+				<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
 
 
-</body>
-</html>
+			</body>
+			</html>

@@ -7,8 +7,9 @@ $sql1 = "SELECT * from service";
 $result1 = $db->query($sql1)->fetch_all();
 
 
-$sql2 = "SELECT * from why";
-$result2 = $db->query($sql2)->fetch_all();
+$sqlw = "SELECT * from why";
+$resultw = $db->query($sqlw)->fetch_all();
+
 
 $sql3 = "SELECT * from employee";
 $result3 = $db->query($sql3)->fetch_all();
@@ -36,7 +37,8 @@ $result4 = $db->query($sql4)->fetch_all();
 
 if (isset($_POST['themdv'])) {{
 	$db->query("INSERT INTO service1(names,images,emp,price) values('".$_POST['select']."','".$_POST['anhdv']."','".$_POST['tennv']."','".$_POST['giadv']."')");
-	// header("Refresh:0; url=themdv.php");
+	//header("Refresh:0");
+
 }
 }
 

@@ -61,7 +61,7 @@
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-				
+				<i class="fas fa-cart-arrow-down"></i>&emsp;
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button style="margin-right: 240px" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
@@ -79,9 +79,16 @@
 			<div class="col-sm-3">
 				<div class="border" >
 				<h5><?php echo $result4[$i][1];  ?></h5>
-				<img style="width: 200px; height: 200px" src="<?php  echo $result4[$i][2]; ?>">
+				<img style="width: 200px; height: 200px" src="../Img/<?php  echo $result4[$i][2]; ?>">
 				<p><?php echo $result4[$i][3];  ?></p>
 				<p><?php echo $result4[$i][4];  ?></p>
+				<div style="display: flex; justify-content: center;">
+					
+				<button type="submit" style=" margin-right:10px;"class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle"></i>  Chi tiet</button>
+
+				<button type="submit" class="btn btn-outline-danger my-2 my-sm-0">Đặt  <i class="far fa-laugh-wink"></i></button>
+				
+				</div>
 				</div>
 			</div>
 		<?php } ?>
