@@ -31,19 +31,19 @@ create table service1(
  price varchar(255)
  );
  
-  insert into service1 value (1,"Nhạc công","../Img/nhaccong.jpg","Nguyễn Trịnh","500.000"),
+  insert into service1 value (1,"Nhạc công","../Img/nhaccong.jpg","Nguyễn Trịnh","600.000"),
                         (2,"Nhạc","../Img/nhac.jpg","Trần Văn Bi","500.000"),
-                        (3,"Nhạc công","../Img/nhaccong.jpg","Nguyễn Văn Mạnh","500.000"),
+                        (3,"Nhạc công","../Img/nhaccong.jpg","Nguyễn Văn Mạnh","600.000"),
                         (4,"MC","../Img/mc.jpg","Phan Phước Bảo","500.000"),
                         (5,"Pháo","../Img/phao.jpg","Nguyễn Trịnh","400.000"),
                         (6,"Kim tuyến","../Img/ktuyen.jpg","Nguyễn Trịnh","300.000"),
                         (7,"Màn hình led","../Img/denled.jpg","Nguyễn Anh Bi","2.000.000"),
-                        (8,"Máy chiếu","../Img/maychieu.jpg","Nguyễn Trịnh","900.000"),
+                        (8,"Máy chiếu","../Img/maychieu.jpg","Nguyễn Trịnh","1.000.000"),
                         (9,"Máy nổ","../Img/mno.png","Nguyễn Trịnh","600.000"),
                         (10,"Phương tiện","../Img/nhac3.jpg","Nguyễn Trịnh","500.000"),
                         (11,"Trống","../Img/trong.jpg","Nguyễn Văn Lạc","1.000.000"),
-                        (12,"Guitar","../Img/guitar.jpg","Nguyễn Văn Lạc","500.000"),
-						(13,"Toàn bộ","../Img/toanbo.png","All","500.000");
+                        (12,"Guitar","../Img/guitar.jpg","Nguyễn Văn Lạc","600.000"),
+						(13,"Toàn bộ","../Img/toanbo.png","All","9.000.000");
 create table why(
 id int auto_increment primary key,
 image varchar(255),
@@ -53,7 +53,7 @@ detail1 varchar(255),
 detail2 varchar(255),
 detail3 varchar(255)
 );
-insert into why value(1,"../Img/c6.jpg","Tại sao bạn nên chọn chúng tôi?","Chúng tôi là một dàn nhạc luôn luôn đáp ứng các nhu cầu để cho quý khách có những giây phút thư giãn thoải máy nhất","Chúng tôi có một dàn loa chuyên nghiệp","Đội ngũ nhân viên nhiệt tình","Hỗ trợ việc vận chuyển dàn nhạc");
+insert into why value(1,"../Img/c6.jpg","Tại sao bạn nên chọn chúng tôi?","Chúng tôi là một dàn nhạc luôn luôn đáp ứng các nhu cầu để cho quý khách có những giây phút thư giãn thoải máy nhất","Chúng tôi có một dàn loa chuyên nghiệp","Đội ngũ nhân viên nhiệt tình","Làm việc lâu năm và đầy kinh nghiệm ");
 
 create table emp(
 id int auto_increment primary key,

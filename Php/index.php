@@ -16,7 +16,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
 </head>
 <body>
 	
@@ -331,6 +331,7 @@
 	<hr>
 	<br>
 	<!-- Kết -->
+	<div style="background: #f6f9f9">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
@@ -355,6 +356,7 @@
 						</center></div>
 					</div>
 				</div>
+			</div>
 				<br>
 				<br>
 				<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>

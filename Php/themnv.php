@@ -13,7 +13,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
 </head>
 <body>
 	<div  style="background-color: #252525; color:white; width: 100%; height: 40px; font-size: 15.5px;" >
@@ -87,12 +87,12 @@
 				<option value="">MC</option>
 			</select>
 		</div>
-		<button type="submit" class="btn btn-primary" name="them">Thêm</button>
+		<button type="submit" name="themnv" class="btn btn-primary" >Thêm</button>
 	</form>
 	<br>
 	<?php include 'database.php';?>
 	<div>
-		<?php if (isset($_POST['them'])) {
+		<?php if (isset($_POST['themnv'])) {
 		$sql_insert = 'INSERT INTO employee(name,image,address,phone,assignment) VALUES ('.$_POST['ten'].','.$_POST['anh'].','.$_POST['dc'].','.$_POST['sdt'].','.$_POST['select'].')';
 		$db->query($sql_insert);
 	} ?>
@@ -108,7 +108,6 @@
 			<th>Chuyên môn</th>
 			<th></th>
 		</tr>
-		
 		<tbody>
 			<?php include 'database.php';?>
 			<form method="POST">
@@ -133,52 +132,5 @@
 			</tbody>
 	</table>
 </div>
-	<!-- <div>
-		
-			<?php if (isset($_POST['them'])) {
-				$sql_insert = 'INSERT INTO employee(name,image,address,phone,assignment) VALUES ('.$_POST['ten'].','.$_POST['anh'].','.$_POST['diachi'].','.$_POST['sdt'].','.$_POST['select'].')';
-				$db->query($sql_insert);
-			} ?>
-			<br>
-			<table align="center" border="1px" cellspacing="0" class="table table-hover">
-
-				<tr>
-					<th>Id</th>
-					<th>Tên</th>
-					<th>Ảnh</th>
-					<th>Địa chỉ</th>
-					<th>Số điện thoại</th>
-					<th>Chuyên môn</th>
-					<th></th>
-
-				</tr>
-
-				<tbody>
-					<form method="POST">
-						<?php
-						for ($i=0; $i < count($result)  ; $i++) { 
-							?>
-							<tr>
-								<td><?php  echo $result[$i][0]; ?></td>
-								<td><?php  echo $result[$i][1]; ?></td>
-								<td style="width: 300px"><img style="width: 200px; height: 200px" src="../Img/<?php  echo $result[$i][2]; ?>"></td>
-
-								<td><?php  echo $result[$i][3]; ?></td>
-								<td><?php  echo $result[$i][4]; ?></td>
-								<td><?php  echo $result[$i][5]; ?></td>
-								<td><button name="sua" value="">Sửa</button>
-									<button name="xoa" value=<?php echo $result[$i][0] ?>> Xóa</button></td>
-								</tr>
-							<?php } ?>
-
-
-						</form>
-
-
-					</tbody>
-				</table>
-			</div>
-		</div>
-	-->
 </body>
 </html>

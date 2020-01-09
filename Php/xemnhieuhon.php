@@ -13,7 +13,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
 </head>
 <body>
 	<div  style="background-color: #252525; color:white; width: 100%; height: 40px; font-size: 15.5px;" >
@@ -84,9 +84,9 @@
 				<p><?php echo $result4[$i][4];  ?></p>
 				<div style="display: flex; justify-content: center;">
 					
-				<button type="submit" style=" margin-right:10px;"class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle"></i>  Chi tiet</button>
+				<center><button type="submit" class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle"></i>  Chi tiet</button></center>
 
-				<button type="submit" class="btn btn-outline-danger my-2 my-sm-0">Đặt  <i class="far fa-laugh-wink"></i></button>
+				
 				
 				</div>
 				</div>

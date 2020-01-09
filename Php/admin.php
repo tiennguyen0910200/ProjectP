@@ -13,7 +13,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
 </head>
 <body>
 	<div  style="background-color: #252525; color:white; width: 100%; height: 40px; font-size: 15.5px;" >
@@ -83,7 +83,7 @@
 					<tr>
 						<td><?php  echo $result3[$i][0]; ?></td>
 						<td><?php  echo $result3[$i][1]; ?></td>
-						<td style="width: 300px"><img style="width: 130px; height: 130px" src="../Img/<?php  echo $result3[$i][2]; ?>"></td>
+						<td style="width: 300px"><img style="width: 100px; height: 100px" src="../Img/<?php  echo $result3[$i][2]; ?>"></td>
 
 						<td><?php  echo $result3[$i][4]; ?></td>
 						<td><?php  echo $result3[$i][5]; ?></td>
