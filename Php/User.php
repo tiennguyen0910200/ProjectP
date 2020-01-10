@@ -139,7 +139,8 @@
 					<p><?php echo $result4[$i][4];  ?></p>
 					<div style="display: flex; justify-content: center;">
 
-						<center><button type="submit" class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle"></i>  Chi tiet</button></center>
+						<center><button type="submit" class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle"></i>  Chi tiết</button>
+						<button type="submit" class="btn btn-outline-danger my-2 my-sm-0"><i class="fas fa-cart-plus"></i> Đặt dịch vụ</button></center>
 					</div>
 				</div>
 			</div>

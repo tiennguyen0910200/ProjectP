@@ -89,5 +89,37 @@
 		</div>
 		
 	</div>
+	<div style="background: #f6f9f9">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<center>
+						<img src="../Img/logo.png" width="280px; height=280px;" alt="">
+					</center></div>
+					<div class="col-sm-4">
+						<center><h3>Dàn nhạc Trịnh</h3>
+							<br>
+							<i class="fab fa-facebook"></i>Dàn nhạc Trịnh<br>
+							<i class="fas fa-phone"></i>(+84)983 942 707
+							<i class="fas fa-envelope"></i>trinh.nguyen1968@gmail.com<br>
+							<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
+
+						</center></div>
+						<div class="col-sm-4">
+							<center><h3>Dàn nhạc Trịnh</h3>
+								<br>
+								<p>Chúng tôi rất vui khi được phục vụ các bạn, luôn mong các bạn có được sự trải nghiệm tốt nhất.Hãy liên lạc với chúng tôi nhé các bạn!!!</p>
+								<i>Chúng các bạn ngày vui vẻ!</i>
+
+
+							</center></div>
+						</div>
+
+					</div>
+				</div>
+				<br>
+				<br>
+				<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
+
 </body>
 </html>

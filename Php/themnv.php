@@ -131,6 +131,8 @@
 				</form>
 			</tbody>
 	</table>
+	<br>
+				<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
 </div>
 </body>
 </html>
