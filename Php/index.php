@@ -145,7 +145,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Khác</a>
+					<a class="nav-link disabled" href="#">Giới thiệu</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
@@ -339,25 +339,25 @@
 						<img src="../Img/logo.png" width="280px; height=280px;" alt="">
 					</center></div>
 					<div class="col-sm-4">
-							<center><h3>Dàn nhạc Trịnh</h3>
-								<br>
-								<i class="fab fa-facebook"></i>Dàn nhạc Trịnh<br>
-								<i class="fas fa-phone"></i>(+84)983 942 707
-								<i class="fas fa-envelope"></i>trinh.nguyen1968@gmail.com<br>
-								<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
-
-							</center></div>
-					<div class="col-sm-4">
 						<center><h3>Dàn nhạc Trịnh</h3>
 							<br>
-							<p>Chúng tôi rất vui khi được phục vụ các bạn, luôn mong các bạn có được sự trải nghiệm tốt nhất.Hãy liên lạc với chúng tôi nhé các bạn!!!</p>
-							<i>Chúng các bạn ngày vui vẻ!</i>
-
+							<i class="fab fa-facebook"></i>Dàn nhạc Trịnh<br>
+							<i class="fas fa-phone"></i>(+84)983 942 707
+							<i class="fas fa-envelope"></i>trinh.nguyen1968@gmail.com<br>
+							<i class="fas fa-map-marker-alt"></i>Xuân Phú-Hòa Sơn-Hòa Vang-Đà Nẵng
 
 						</center></div>
+						<div class="col-sm-4">
+							<center><h3>Dàn nhạc Trịnh</h3>
+								<br>
+								<p>Chúng tôi rất vui khi được phục vụ các bạn, luôn mong các bạn có được sự trải nghiệm tốt nhất.Hãy liên lạc với chúng tôi nhé các bạn!!!</p>
+								<i>Chúng các bạn ngày vui vẻ!</i>
+
+
+							</center></div>
 						</div>
 
-						</div>
+					</div>
 				</div>
 				<br>
 				<br>

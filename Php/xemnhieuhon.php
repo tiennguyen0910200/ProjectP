@@ -84,7 +84,38 @@
 				<p><?php echo $result4[$i][4];  ?></p>
 				<div style="display: flex; justify-content: center;">
 					
-				<center><button type="submit" class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle"></i>  Chi tiết</button></center>
+				<center><button type="submit" class="btn btn-outline-info my-2 my-sm-0"><i class="fas fa-info-circle" data-toggle="modal" data-target="#myModal1"> Chi tiết</i>&emsp;</button></center>
+
+			<div class="modal" id="myModal1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div style="color:black">
+							<center><h1>Dang ki</h1></center>
+							<hr>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">Hovaten</label>
+
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputName" placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword" class="col-sm-2 control-label">MatKhau</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+								<a href="" >Quen mat khau</a>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Gui</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 
 				
 				
