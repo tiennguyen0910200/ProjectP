@@ -49,4 +49,6 @@ if (isset($_POST['xoa'])) {
 $sql5 = "SELECT * from emp";
 $result5 = $db->query($sql5)->fetch_all();
 
+$sql6 = "SELECT * from Users";
+$result6 = $db->query($sql6)->fetch_all();
 ?>

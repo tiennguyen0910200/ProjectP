@@ -13,7 +13,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
 </head>
 <body>
 	<div  style="background-color: #252525; color:white; width: 100%; height: 40px; font-size: 15.5px;" >
@@ -68,7 +68,7 @@
 		</div>
 	</nav>
 	<br>
-	<form action="" method="POST" role="form">
+	<form action="themdv.php" method="POST" role="form">
 		<legend>Thêm dịch vụ</legend>
 
 		<div class="form-group">
@@ -133,19 +133,73 @@
 						<td><?php  echo $result4[$i][0]; ?></td>
 						<td><?php  echo $result4[$i][1]; ?></td>
 						<td style="width: 300px"><img style="width: 130px; height: 130px" src="../Img/<?php  echo $result4[$i][2]; ?>"></td>
-                        <td><?php  echo $result4[$i][3]; ?></td>
+						<td><?php  echo $result4[$i][3]; ?></td>
 						<td><?php  echo $result4[$i][4]; ?></td>
-						<td><button name="sua" value=<?php echo $result4[$i][0] ?>>Sửa</button>
-							<button name="xoa" value=<?php echo $result4[$i][0] ?>> Xóa</button></td>
-						</tr>
-					<?php } ?>
+						<td><button name="sua" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" value=<?php echo $result4[$i][0] ?>>Sửa</button>
+
+							<?php 
+								if(isset($_POST["sua"])){
+									$sql = "SELECT * FROM service1 WHERE id = ".$_POST["sua"];
+									$sql22 = $db->query($sql)->fetch_all();
+								}
+							 ?>
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<div class="modal-body">
+											<div class="form-group">
+
+											<label for="input" class="col-sm-2 control-label"></label>
+											<div class="col-sm-2">
+												<label for="">Chọn</label>
+												<select name="select" id="input" class="form-control" required="required">
+													<option value="Nhạc" >Nhạc</option>
+													<option value="MC" >MC</option>
+													<option value="Trống">Trống</option>
+													<option value="Pháo">Pháo</option>
+													<option value="Đèn led">Đèn led</option>
+													<option value="Kim tuyến">Kim tuyến</option>
+													<option value="Máy chiếu">Máy chiếu</option>
+													<option value="Máy nổ">Máy nổ</option>
+													<option value="Phương tiện">Phương tiện</option>
+													<option value="Đàn organ">Đàn organ</option>
+													<option value="Guitar">Guitar</option>
+													<option value="Toàn bộ">Toàn bộ</option>
+													<option value="audi" selected>Dàn Nhạc Trịnh</option>
+												</select>
+											</div>
+
+											<label for="">Ảnh</label>
+											<input type="file" class="form-control" name="anhdv" value="../Img/<?php  echo $sql22[0][2]; ?>" id="" placeholder="Input field">
+											<label for="">Tên nhân viên</label>
+											<input type="text" class="form-control" name="tennv" value="<?php  echo $sql22[0][3]; ?>" id="" placeholder="Input field">
+											<label for="">Giá</label>
+											<input type="text" class="form-control" name="giadv" value="<?php  echo $sql22[0][4]; ?>" id="" placeholder="Input field">
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<button name="xoa" value=<?php echo $result4[$i][0] ?>> Xóa</button></td>
+					</tr>
+				<?php } ?>
 
 
-				</form>
-			</tbody>
-		</table>
-		<br>
-				<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
+			</form>
+		</tbody>
+	</table>
+	<br>
+	<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
 
-	</body>
-	</html>
+</body>
+</html>

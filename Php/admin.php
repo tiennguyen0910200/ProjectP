@@ -13,21 +13,43 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="../Css/aaa.css">
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
 </head>
 <body>
+	<?php 
+// 	session_start();
+// 	if(!isset($_SESSION['admin'])){
+// 	header("location:index.php");
+// }
+// else{
+
+	 ?>
 	<div  style="background-color: #252525; color:white; width: 100%; height: 40px; font-size: 15.5px;" >
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
-					<i class="fas fa-mobile-alt">&emsp;(+84)983 942 707</i>
+				<div class="col-sm-3">
+					<i class="fas fa-mobile-alt">(+84)983 942 707</i>
 				</div>
-				<div class="col-sm-4">
-					<i class="fas fa-map-marker-alt">&emsp;Xuân Phú - Hòa Sơn - Hòa Vang - TP. Đà Nẵng</i>
+				<div class="col-sm-3">
+					<i class="fas fa-map-marker-alt">Xuân Phú - Hòa Sơn - Hòa Vang - TP. Đà Nẵng</i>
 				</div>
-				<div class="col-sm-4">
-					<i class="fab fa-facebook">&emsp;Dàn Nhạc Trịnh</i>
+				<div class="col-sm-3">
+					<i class="fab fa-facebook">Dàn Nhạc Trịnh</i>
 				</div>
+				<div class="col-sm-3">
+					<form method="post">
+						<i class="far fa-bell"></i>
+						<button type="submit" name="log-out"><i class="fas fa-sign-out-alt">Đăng xuất</i></button>
+					</form>
+					<?php
+					
+					//  if(isset($_POST['log-out'])){
+
+					// }
+					 ?>
+				</div>
+				
+
 			</div>
 		</div>
 	</div>
@@ -132,5 +154,8 @@
 		</table>
 		<br>
 				<center><div style="background-color: #252525;color: white;"> &copy; 2020 - Design by Nguyen Thi Tien. All Rights Reserved.</div></center>
+			<?php 
+		//} 
+		?>
 	</body>
 	</html>
